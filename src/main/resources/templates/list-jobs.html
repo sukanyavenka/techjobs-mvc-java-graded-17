@@ -9,7 +9,7 @@
 <div class="container body-content">
 
   <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
-  <div th:fragment="jobTable (jobs)">
+
   <th:block th:each="job : ${jobs}">
     <table class="job-listing">
       <tr><td>ID</td>
@@ -30,7 +30,6 @@
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
 
-</div>
 </div>
 </body>
 </html>
